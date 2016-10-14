@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  type "/RestExp/swagger-ui.html" for REST API's UI
   </body>
 </html>
