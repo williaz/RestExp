@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * Created by williaz on 10/14/16.
+ * mock service
  */
 @Service
 public class CustomerService {
@@ -17,4 +18,21 @@ public class CustomerService {
 
         return customerDto;
     }
+    //assign the id
+    public CustomerDto save(CustomerDto customerDto){
+        customerDto.setCustomId(257);
+
+        return customerDto;
+    }
+
+    //update
+    public CustomerDto update(long id, CustomerDto customerDto){
+        //EMPTY
+        return customerDto;
+    }
+
+    public void delete(long id){
+
+    }
+
 }
