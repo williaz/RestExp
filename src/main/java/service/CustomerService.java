@@ -9,7 +9,12 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CustomerService {
+
     public CustomerDto getCustomerById(long id) {
+        if(id>500){
+            return null; //for testing No found exception
+        }
+
         CustomerDto customerDto = new CustomerDto();
         customerDto.setLastName("Wang");
         customerDto.setFirstName("Bill");
@@ -28,6 +33,8 @@ public class CustomerService {
     //update
     public CustomerDto update(long id, CustomerDto customerDto){
         //EMPTY
+        customerDto.setCustomId(111);
+
         return customerDto;
     }
 
