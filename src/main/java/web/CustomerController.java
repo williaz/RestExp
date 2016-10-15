@@ -86,7 +86,8 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ErrorDto CustomerNotFoundHandler(CustomerNotFoundException e){
         long customId = e.getCustomId();
-        ErrorDto em = new ErrorDto(1, "Customer [" + customId + "] not found");
+        String msg = "Customer [" + customId + "] not found";
+        ErrorDto em = new ErrorDto(1, msg);
 
         return em;
     }

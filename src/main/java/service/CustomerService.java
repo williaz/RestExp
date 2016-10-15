@@ -33,7 +33,7 @@ public class CustomerService {
     //update
     public CustomerDto update(long id, CustomerDto customerDto){
         //EMPTY
-        customerDto.setCustomId(111);
+        customerDto.setCustomId(id);
 
         return customerDto;
     }
