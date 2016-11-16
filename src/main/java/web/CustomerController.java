@@ -56,6 +56,8 @@ public class CustomerController {
        return customer;
     }
 
+    //partial update -PATCH
+
     //Update one
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT, consumes = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE},
             produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
@@ -91,6 +93,7 @@ public class CustomerController {
 
         return em;
     }
+
 
 
 
